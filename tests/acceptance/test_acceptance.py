@@ -3,11 +3,15 @@ import pytest
 import requests
 import subprocess
 import time
+import os
 
 @pytest.fixture(scope="module")
 def server():
-    process = subprocess.Popen(['python', 'app.py'])
-    time.sleep(2)  # Espera a que el servidor arranque
+    # Ruta absoluta desde la raíz del proyecto
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../'))
+    app_path = os.path.join(project_root, 'src/app.py')
+    process = subprocess.Popen(['python', app_path])
+    time.sleep(5)
     yield
     process.terminate()
 

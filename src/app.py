@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from src.main import Calculator
+from main import Calculator
 
 app = Flask(__name__)
 calc = Calculator()
