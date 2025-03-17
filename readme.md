@@ -1,4 +1,8 @@
 
+instalar todo
+pip install -r requirements.txt
+playwright install
+
 # Para correr todas las pruebas:
 python -m unittest discover -s tests
 

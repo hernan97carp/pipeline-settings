@@ -7,7 +7,7 @@ def test_example():
         # Crea el contexto sin grabación de video
         context = browser.new_context()
         page = context.new_page()
-        page.goto("https://playwright.dev/") 
-        assert page.title() == "Fast and reliable end-to-end testing for modern web apps | Playwright"
+        page.goto("https://playwright.dev/docs/intro") 
+        assert page.title() == "Playwright"
         context.close()
         browser.close()
