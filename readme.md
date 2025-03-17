@@ -8,7 +8,7 @@ python -m unittest discover -s tests
 
 
 # Ejecutar mis pruebas de unit test:
-python -m unittest tests/unit/test_unit.py
+python -m unittest discover -s tests/unit -p "test_*.py" -v
 
 
 # Ejecutar mis pruebas de integracion de Componentes:
@@ -22,9 +22,4 @@ python -m unittest tests/system/test_system.py
 python -m unittest tests/integration/test_integration_system.py
 
 # Ejecutar mis pruebas de E2E:
-pytest tests\e2e\test_acceptance.py
-npx playwright test
-
-
-# Ejecutar con Playwright:
 pytest

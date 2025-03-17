@@ -2,3 +2,4 @@ flask
 pytest
 playwright
 pytest-playwright
+coverage
