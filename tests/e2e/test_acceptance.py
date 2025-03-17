@@ -1,4 +1,4 @@
-# tests/acceptance/test_acceptance.py
+
 import pytest
 import requests
 import subprocess
