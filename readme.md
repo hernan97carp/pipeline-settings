@@ -1,5 +1,7 @@
+# 🚀 Plantilla Python-Playwright-Pipeline
+ Esta plantilla te permite integrar diferentes niveles de prueba a través de pipelines. Utiliza Python y Playwright para ejecutar tests y aprovecha el poder de la integración continua.🧑‍💻✨
 
-instalar todo
+# Instalar todo
 pip install -r requirements.txt
 playwright install
 
